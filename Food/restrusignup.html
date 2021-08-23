@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyB1zDFZXiVGiu02efW8QwJkehTL-zAP-r4",
+        authDomain: "food-delivery-applicatio-a48d1.firebaseapp.com",
+        databaseURL: "https://food-delivery-applicatio-a48d1-default-rtdb.firebaseio.com",
+        projectId: "food-delivery-applicatio-a48d1",
+        storageBucket: "food-delivery-applicatio-a48d1.appspot.com",
+        messagingSenderId: "1059920432659",
+        appId: "1:1059920432659:web:0826f3375a1aace747f9e6",
+        measurementId: "G-EZZYFY753Q"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="myCard">
+
+            <center>
+                <div class="myLeftCtn">
+
+                    <!-- <form class="myForm text-center" onsubmit="validation()"> -->
+                    <header style="color: orange;">Create new account</header>
+                    <div class="imgcontainer">
+                        <label>
+                            <img src="./image/avatar.png" alt="Avatar" class="avatar avatar-custom" id="avatar-custom">
+                            <input type="file" placeholder="Upload Image" onchange="imageSelected()" name="upload-image" required
+                                id="upload-image">
+                        </label>
+                    </div>
+                    <br />
+                      
+                    <div class="form-group" >
+                        <i style="color: orange;" class="fas fa-user"></i>
+                        <input class="myInput" type="text" placeholder="Restrunant name" id="username">
+                    </div>
+                    <div class="display-inline">
+                    <div class="form-group">
+
+                        <i style="color: orange;" class="fas fa-envelope"></i>
+                        <input class="myInput" type="text" placeholder="Email" id="emailaddress">
+
+                    </div>
+                    <div class="form-group">
+                        <i style="color: orange;" class="fas fa-phone"></i>
+                        <input class="myInput" type="number" placeholder="phone-number" id="phonenum">
+                    </div>
+                </div>
+                <div class="display-inline">
+
+                    <div class="form-group">
+                        <i style="color: orange;" class="fas fa-city"></i>
+                        <input class="myInput" type="text" placeholder="city" id="city">
+                    </div>
+                    <div class="form-group" >
+                        <i style="color: orange;" class="fas fa-city"></i>
+                        <input class="myInput" type="text" placeholder="Country" id="country">
+                    </div>
+                    </div>
+                    <div class="display-inline">
+
+                    <div class="form-group">
+
+                        <i style="color: orange;" class="fas fa-key"></i>
+                        <input class="myInput" type="password" placeholder="Password" id="passwo">
+
+                    </div>
+                    <div class="form-group">
+
+                        <i style="color: orange;" class="fas fa-key"></i>
+                        <input class="myInput" type="password" placeholder="Confirm-password" id="review-passw">
+
+                    </div>
+                    </div>
+                  
+                    <div class="button input-box" id="btnid">
+                        <button style="background-color: orange" type="submit" class="myInput" id="btn" onclick="restur()"> Submit </button>
+                    </div>
+                
+                    
+                    <div class="text log-in-text">Already have an account?
+                        <a href="restrusignin.html"> <label for="flip" id="labletag">Login now</label></a>
+                    </div>
+
+                    
+                    <p id="messagepara"></p>
+
+                </div>
+            </center>
+
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+     <script src="app.js"></script>
+</body>
+</html>
